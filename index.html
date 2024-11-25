@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railways Game Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">RAILWAYS</h1>
+
+    <div class="input-container">
+      <input type="text" id="username" placeholder="WHO ARE YOU?">
+    </div>
+
+    <div class="difficulty-container">
+      <h2>SET THE DIFFICULTY!</h2>
+      <div class="radio-group">
+        <label class="radio-option">
+          <input type="radio" name="difficulty" value="5x5">
+          <span>5 x 5</span>
+          <p>Easy</p>
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="difficulty" value="7x7">
+          <span>7 x 7</span>
+          <p>Hard</p>
+        </label>
+      </div>
+    </div>
+
+    <div class="buttons-container">
+      <button class="button rules_btn">RULES</button>
+      <button class="button start_btn">START GAME</button>
+    </div>
+  </div>
+
+  <div class="rules_div" hidden>
+    <button class="close_btn">X</button>
+    <h2>Game Rules</h2>
+    <p>There are no specific requirements for placing railway elements, so you can decide how to approach this part. Here are some ideas:</p>
+    <ul>
+      <li>Clicking on cells cycles through different element types, with options to rotate or delete using the right mouse button.</li>
+      <li>After selecting a tile, elements can be chosen from a palette or switched using the arrow keys.</li>
+      <li>Elements can be dragged and dropped onto a tile from a palette.</li>
+      <li>The railway line can be drawn by holding down the mouse button and moving across the cells.</li>
+    </ul>
+  </div>
+
+  <div class="game_body" hidden>
+    <div class="user_data" hidden>
+        <h1 class="title">RAILWAYS</h1>
+        <div class="user-info-container">
+            <div class="user-info">
+                <h2>Route Designer</h2>
+                <p id="user-name">--</p>
+            </div>
+            <div class="time-info">
+                <h2>Time Elapsed</h2>
+                <p id="time-elapsed">00:00</p>
+            </div>
+        </div>
+    </div>    
+    <div class="game" hidden></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
