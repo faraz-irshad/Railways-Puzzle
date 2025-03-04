@@ -1,6 +1,7 @@
 # Railways Game Menu
 
 This project is a web-based menu system for the **Railways Game**. It provides a clean and interactive user interface for players to configure their gameplay preferences and learn the game rules.
+The website is live at this link: https://faraz-irshad.github.io/Railways-Puzzle/
 
 ## Features
 
